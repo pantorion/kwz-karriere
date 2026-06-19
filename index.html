@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karriere · Kinderwunschzentrum am Innsbrucker Platz</title>
+<meta name="description" content="MFA (w/m/d) für unser frauengeführtes Kinderwunschzentrum in Berlin-Friedenau. Junges Team, neue Praxis, faire Bedingungen, keine Schichten.">
+<meta property="og:title" content="Karriere · Kinderwunschzentrum am Innsbrucker Platz">
+<meta property="og:description" content="MFA gesucht — drei Ärztinnen, neues Team, frisch renovierte Praxis am S+U Innsbrucker Platz.">
+<meta property="og:image" content="assets/aerztinnen-trio.jpg">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="assets/logo-farbe.svg">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --kwz-wald: #285740;
+  --kwz-lindgruen: #C8E4D1;
+  --kwz-creme: #F5E9E2;
+  --kwz-weiss: #FFFFFF;
+
+  --kwz-font: 'Albert Sans', system-ui, -apple-system, sans-serif;
+  --kwz-font-light: 300;
+  --kwz-font-regular: 400;
+  --kwz-font-bold: 700;
+
+  --kwz-space-xs: 4px;
+  --kwz-space-sm: 8px;
+  --kwz-space-md: 16px;
+  --kwz-space-lg: 24px;
+  --kwz-space-xl: 32px;
+  --kwz-space-2xl: 48px;
+  --kwz-space-3xl: 64px;
+  --kwz-space-4xl: 96px;
+
+  --kwz-radius-sm: 4px;
+  --kwz-radius-md: 8px;
+  --kwz-radius-lg: 16px;
+  --kwz-radius-full: 9999px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  font-family: var(--kwz-font);
+  font-weight: var(--kwz-font-regular);
+  color: var(--kwz-wald);
+  background: var(--kwz-creme);
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { font-weight: var(--kwz-font-bold); color: var(--kwz-wald); line-height: 1.15; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); margin-bottom: var(--kwz-space-md); }
+h3 { font-size: 1.25rem; margin-bottom: var(--kwz-space-sm); }
+p { margin-bottom: var(--kwz-space-md); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--kwz-wald); }
+
+/* HEADER */
+.kwz-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--kwz-weiss);
+  padding: var(--kwz-space-md) var(--kwz-space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--kwz-lindgruen);
+}
+.kwz-header__logo { height: 44px; width: auto; }
+.kwz-header__nav { display: flex; gap: var(--kwz-space-lg); list-style: none; }
+.kwz-header__nav a {
+  color: var(--kwz-wald);
+  text-decoration: none;
+  font-weight: var(--kwz-font-regular);
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+.kwz-header__nav a:hover { opacity: 0.6; }
+
+/* HERO */
+.kwz-hero-karriere {
+  background: var(--kwz-lindgruen);
+  color: var(--kwz-wald);
+  padding: var(--kwz-space-3xl) var(--kwz-space-2xl);
+  overflow: hidden;
+}
+.kwz-hero-karriere__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--kwz-space-3xl);
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.kwz-hero-karriere__eye {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: var(--kwz-font-bold);
+  color: var(--kwz-wald);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: var(--kwz-space-lg);
+  padding-left: 36px;
+  position: relative;
+}
+.kwz-hero-karriere__eye::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 2px;
+  background: var(--kwz-wald);
+}
+.kwz-hero-karriere h1 {
+  color: var(--kwz-wald);
+  margin-bottom: var(--kwz-space-lg);
+}
+.kwz-hero-karriere h1 em {
+  font-style: italic;
+  color: var(--kwz-wald);
+  font-weight: var(--kwz-font-regular);
+}
+.kwz-hero-karriere__sub {
+  color: var(--kwz-wald);
+  font-size: 1.125rem;
+  font-weight: var(--kwz-font-regular);
+  max-width: 540px;
+  margin-bottom: var(--kwz-space-xl);
+  line-height: 1.55;
+}
+.kwz-hero-karriere__cta-row {
+  display: flex;
+  gap: var(--kwz-space-md);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.kwz-btn {
+  display: inline-block;
+  font-family: var(--kwz-font);
+  font-weight: var(--kwz-font-bold);
+  font-size: 1rem;
+  padding: var(--kwz-space-md) var(--kwz-space-xl);
+  border-radius: var(--kwz-radius-md);
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: opacity 0.2s, transform 0.1s;
+}
+.kwz-btn:hover { opacity: 0.85; }
+.kwz-btn:active { transform: translateY(1px); }
+.kwz-btn--primary { background: var(--kwz-wald); color: var(--kwz-weiss); }
+.kwz-btn--secondary { background: transparent; color: var(--kwz-wald); border-color: var(--kwz-wald); }
+.kwz-btn--invers { background: var(--kwz-creme); color: var(--kwz-wald); }
+.kwz-btn--invers:hover { background: var(--kwz-weiss); opacity: 1; }
+.kwz-btn--ghost-light {
+  background: transparent;
+  color: var(--kwz-lindgruen);
+  border-color: var(--kwz-lindgruen);
+}
+.kwz-btn--ghost-light:hover { background: rgba(200, 228, 209, 0.1); opacity: 1; }
+.kwz-hero-karriere__photo {
+  position: relative;
+  border-radius: var(--kwz-radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--kwz-lindgruen);
+  box-shadow: 0 20px 50px rgba(40, 87, 64, 0.15);
+}
+.kwz-hero-karriere__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* CONTAINER & SECTION */
+.kwz-container { max-width: 1100px; margin: 0 auto; padding: 0 var(--kwz-space-lg); }
+.kwz-container--narrow { max-width: 800px; }
+.kwz-section {
+  padding: var(--kwz-space-4xl) 0;
+}
+.kwz-section--bg-weiss { background: var(--kwz-weiss); }
+.kwz-section--bg-creme { background: var(--kwz-creme); }
+.kwz-section--bg-lindgruen { background: var(--kwz-lindgruen); }
+.kwz-section--bg-wald { background: var(--kwz-wald); color: var(--kwz-weiss); }
+
+.kwz-section--bg-wald h2, .kwz-section--bg-wald h3 { color: var(--kwz-weiss); }
+.kwz-section--bg-wald p { color: var(--kwz-lindgruen); }
+
+.kwz-eye {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: var(--kwz-font-bold);
+  color: var(--kwz-wald);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: var(--kwz-space-md);
+  padding-left: 36px;
+  position: relative;
+}
+.kwz-eye::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 24px;
+  height: 2px;
+  background: var(--kwz-wald);
+}
+
+.kwz-lead {
+  font-size: 1.2rem;
+  font-weight: var(--kwz-font-light);
+  color: var(--kwz-wald);
+  opacity: 0.85;
+  max-width: 720px;
+  margin-bottom: var(--kwz-space-2xl);
+}
+
+/* TWO-COLUMN SECTION */
+.kwz-twocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--kwz-space-3xl);
+  align-items: center;
+}
+.kwz-twocol--reversed { direction: rtl; }
+.kwz-twocol--reversed > * { direction: ltr; }
+.kwz-twocol img {
+  border-radius: var(--kwz-radius-lg);
+  width: 100%;
+  height: auto;
+  box-shadow: 0 12px 32px rgba(40, 87, 64, 0.12);
+}
+
+/* KARTEN */
+.kwz-karte {
+  background: var(--kwz-weiss);
+  border-radius: var(--kwz-radius-md);
+  padding: var(--kwz-space-xl);
+  box-shadow: 0 2px 12px rgba(40, 87, 64, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.kwz-karte:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(40, 87, 64, 0.12); }
+.kwz-karte__ico {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--kwz-radius-md);
+  background: var(--kwz-lindgruen);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--kwz-space-md);
+  font-size: 1.3rem;
+}
+.kwz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--kwz-space-lg);
+}
+
+/* LISTE */
+.kwz-liste { list-style: none; padding: 0; }
+.kwz-liste li {
+  padding: var(--kwz-space-sm) 0 var(--kwz-space-sm) var(--kwz-space-lg);
+  position: relative;
+  font-size: 1.05rem;
+}
+.kwz-liste li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--kwz-wald);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 16px;
+}
+
+/* INFOBOX */
+.kwz-infobox {
+  background: var(--kwz-lindgruen);
+  border-left: 4px solid var(--kwz-wald);
+  padding: var(--kwz-space-lg);
+  border-radius: 0 var(--kwz-radius-md) var(--kwz-radius-md) 0;
+  margin: var(--kwz-space-lg) 0;
+}
+.kwz-infobox__title {
+  font-weight: var(--kwz-font-bold);
+  margin-bottom: var(--kwz-space-sm);
+}
+.kwz-infobox p:last-child { margin-bottom: 0; }
+
+/* TEAM-QUOTE */
+.kwz-quote {
+  font-size: 1.4rem;
+  font-weight: var(--kwz-font-light);
+  font-style: italic;
+  color: var(--kwz-wald);
+  border-left: 4px solid var(--kwz-wald);
+  padding-left: var(--kwz-space-lg);
+  margin: var(--kwz-space-xl) 0;
+  line-height: 1.4;
+}
+.kwz-quote__author {
+  display: block;
+  margin-top: var(--kwz-space-md);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: var(--kwz-font-regular);
+  opacity: 0.7;
+}
+
+/* PROZESS-STEPS */
+.kwz-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--kwz-space-lg);
+  counter-reset: step;
+}
+.kwz-step {
+  background: var(--kwz-weiss);
+  padding: var(--kwz-space-xl);
+  border-radius: var(--kwz-radius-md);
+  position: relative;
+  counter-increment: step;
+}
+.kwz-step::before {
+  content: counter(step);
+  position: absolute;
+  top: -14px;
+  left: var(--kwz-space-xl);
+  width: 28px;
+  height: 28px;
+  background: var(--kwz-wald);
+  color: var(--kwz-weiss);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--kwz-font-bold);
+  font-size: 0.9rem;
+}
+.kwz-step h3 { font-size: 1rem; margin: var(--kwz-space-sm) 0; }
+.kwz-step p { font-size: 0.95rem; margin: 0; opacity: 0.8; }
+
+/* FAQ */
+.kwz-faq details {
+  background: var(--kwz-weiss);
+  border-radius: var(--kwz-radius-md);
+  margin-bottom: var(--kwz-space-md);
+  border: 1px solid var(--kwz-lindgruen);
+  overflow: hidden;
+}
+.kwz-faq summary {
+  padding: var(--kwz-space-lg);
+  font-weight: var(--kwz-font-bold);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.kwz-faq summary::-webkit-details-marker { display: none; }
+.kwz-faq summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: var(--kwz-font-light);
+  transition: transform 0.2s;
+}
+.kwz-faq details[open] summary::after { content: '−'; }
+.kwz-faq details > div {
+  padding: 0 var(--kwz-space-lg) var(--kwz-space-lg);
+  border-top: 1px solid var(--kwz-lindgruen);
+  padding-top: var(--kwz-space-md);
+}
+.kwz-faq details > div p:last-child { margin-bottom: 0; }
+
+/* TALLY-EMBED */
+.kwz-form-wrap {
+  background: var(--kwz-weiss);
+  border-radius: var(--kwz-radius-lg);
+  padding: var(--kwz-space-xl);
+  box-shadow: 0 4px 24px rgba(40, 87, 64, 0.1);
+}
+.kwz-form-wrap iframe {
+  width: 100%;
+  border: none;
+  min-height: 700px;
+}
+.kwz-form-placeholder {
+  border: 2px dashed var(--kwz-lindgruen);
+  border-radius: var(--kwz-radius-md);
+  padding: var(--kwz-space-2xl);
+  text-align: center;
+  color: var(--kwz-wald);
+  background: var(--kwz-creme);
+}
+
+/* FOOTER */
+.kwz-footer {
+  background: var(--kwz-wald);
+  color: var(--kwz-lindgruen);
+  padding: var(--kwz-space-3xl) var(--kwz-space-lg) var(--kwz-space-2xl);
+  font-size: 0.9rem;
+  font-weight: var(--kwz-font-light);
+}
+.kwz-footer__inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: var(--kwz-space-xl);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.kwz-footer__inner strong { color: var(--kwz-weiss); font-weight: var(--kwz-font-bold); }
+.kwz-footer a { color: var(--kwz-weiss); text-decoration: none; display: block; padding: 2px 0; }
+.kwz-footer a:hover { text-decoration: underline; }
+.kwz-footer__logo { height: 36px; margin-bottom: var(--kwz-space-md); }
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .kwz-header { padding: var(--kwz-space-md); }
+  .kwz-header__nav { display: none; }
+  .kwz-hero-karriere { padding: var(--kwz-space-2xl) var(--kwz-space-lg); }
+  .kwz-hero-karriere__grid { grid-template-columns: 1fr; gap: var(--kwz-space-xl); }
+  .kwz-section { padding: var(--kwz-space-3xl) 0; }
+  .kwz-twocol { grid-template-columns: 1fr; gap: var(--kwz-space-xl); }
+  .kwz-twocol--reversed { direction: ltr; }
+  .kwz-footer__inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="kwz-header">
+  <a href="#top"><img src="assets/logo-farbe.svg" alt="Kinderwunschzentrum Am Innsbrucker Platz" class="kwz-header__logo"></a>
+  <nav>
+    <ul class="kwz-header__nav">
+      <li><a href="#ueber-uns">Über uns</a></li>
+      <li><a href="#aufgaben">Aufgaben</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#bewerben"><strong>Jetzt bewerben</strong></a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="kwz-hero-karriere">
+  <div class="kwz-hero-karriere__grid">
+    <div>
+      <div class="kwz-hero-karriere__eye">Wir suchen dich</div>
+      <h1>Drei Ärztinnen.<br>Ein neues Team.<br><em>Werde Teil davon.</em></h1>
+      <p class="kwz-hero-karriere__sub">
+        MFA (w/m/d) für unser frauengeführtes Kinderwunschzentrum in Berlin-Friedenau.
+        Ab sofort. Voll- oder Teilzeit. Keine Schichten.
+      </p>
+      <div class="kwz-hero-karriere__cta-row">
+        <a href="#bewerben" class="kwz-btn kwz-btn--primary">In 60 Sekunden bewerben</a>
+        <a href="#ueber-uns" class="kwz-btn kwz-btn--secondary">Mehr über uns</a>
+      </div>
+    </div>
+    <div class="kwz-hero-karriere__photo">
+      <img src="assets/aerztinnen-trio.jpg" alt="Dr. Franziska Pauly, Claudia Ehlert und Dr. Nora Bolz – die drei Inhaberinnen des Kinderwunschzentrums" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ÜBER UNS -->
+<section id="ueber-uns" class="kwz-section">
+  <div class="kwz-container">
+    <div class="kwz-eye">Über uns</div>
+    <h2>Drei Ärztinnen, ein neues Kapitel</h2>
+    <p class="kwz-lead">
+      Wir sind Dr. Nora Bolz, Dr. Franziska Pauly und Claudia Ehlert — drei Fachärztinnen für Gynäkologie mit Schwerpunkt Reproduktionsmedizin. Seit Januar 2026 führen wir gemeinsam das Kinderwunschzentrum am Innsbrucker Platz, das seit 2002 in Berlin etabliert ist.
+    </p>
+
+    <div class="kwz-twocol">
+      <div>
+        <h3>Was uns gerade besonders macht</h3>
+        <p>Die Praxis wird im Sommer 2026 komplett renoviert. Im Herbst eröffnen wir in modernen, hellen Räumen — und bauen das Team von Grund auf neu auf. Du bist von Anfang an dabei und gestaltest mit. Vom Setup der Arbeitsplätze über digitale Abläufe bis hin zu kleinen Ritualen im Praxisalltag.</p>
+        <p>Ein frauengeführtes Kinderwunschzentrum mit jungen Ärztinnen ist in Berlin selten. Wir wollen einen Arbeitsplatz schaffen, an dem fachliche Tiefe, Wertschätzung und ein freundlicher Umgangston selbstverständlich sind.</p>
+      </div>
+      <img src="assets/gesamtteam-aufzug.jpg" alt="Das gesamte Team — Ärztinnen und MFAs gemeinsam vor der Praxis im 5. OG">
+    </div>
+
+    <div class="kwz-grid" style="margin-top: var(--kwz-space-2xl);">
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">♀</div>
+        <h3>Frauengeführt</h3>
+        <p>Drei junge Fachärztinnen mit Schwerpunkt Reproduktionsmedizin. Flache Hierarchien, direkte Kommunikation.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">✦</div>
+        <h3>Neue Praxis ab Herbst 2026</h3>
+        <p>Komplette Renovierung im Sommer. Du gestaltest die neuen Arbeitsplätze und Abläufe mit.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">★</div>
+        <h3>Etabliert seit 2002</h3>
+        <p>Über zwei Jahrzehnte Erfahrung in Reproduktionsmedizin. Patientinnen kommen seit Jahren zu uns — darauf baust du auf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUFGABEN -->
+<section id="aufgaben" class="kwz-section kwz-section--bg-weiss">
+  <div class="kwz-container">
+    <div class="kwz-twocol kwz-twocol--reversed">
+      <div>
+        <div class="kwz-eye">Dein Aufgabengebiet</div>
+        <h2>Spannende Reproduktionsmedizin — kein Standard-Praxisalltag</h2>
+        <p class="kwz-lead">
+          Bei uns lernst du Bereiche kennen, die in der allgemeinen Gynäkologie nicht vorkommen: Eizellentnahmen, Embryotransfers, Kryokonservierung, hormonelle Stimulationsbehandlung.
+        </p>
+        <ul class="kwz-liste">
+          <li>Empfang, Terminkoordination, Vor- und Nachbereitung der Sprechstunde</li>
+          <li>Blutentnahmen und Ultraschall-Assistenz</li>
+          <li>Vorbereitung und Assistenz bei Punktionen und Embryotransfers</li>
+          <li>Patientinnen-Aufklärung und einfühlsame Begleitung</li>
+          <li>Dokumentation, Privat- und KV-Abrechnung</li>
+          <li>Mitgestaltung bei neuen Praxis-Abläufen und digitalen Tools</li>
+        </ul>
+      </div>
+      <img src="assets/cryotank-arbeit.jpg" alt="Kryokonservierung im reproduktionsmedizinischen Labor – Arbeit mit Cryo-Schutzhandschuhen am Stickstofftank">
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits" class="kwz-section">
+  <div class="kwz-container">
+    <div class="kwz-eye">Was du bekommst</div>
+    <h2>Faire Bedingungen, echte Wertschätzung</h2>
+    <p class="kwz-lead">
+      Wir verstehen, dass ein guter Arbeitsplatz mehr ist als nur ein Gehalt. Hier ist, was du bei uns bekommst.
+    </p>
+
+    <div class="kwz-grid">
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">€</div>
+        <h3>Faire Vergütung</h3>
+        <p>Leistungsgerechte Bezahlung, transparent verhandelt — wir richten uns nach deiner Erfahrung und Verantwortung.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">◷</div>
+        <h3>4-Tage-Woche möglich</h3>
+        <p>Bei Teilzeit auf Wunsch 4-Tage-Modell. Kernzeiten Mo–Fr, keine Schichten, keine Wochenenden, keine Nachtdienste.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">☀</div>
+        <h3>30 Tage Urlaub</h3>
+        <p>Plus 24. und 31. Dezember frei. Urlaubsplanung mit dem Team — nicht von oben verordnet.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">🚲</div>
+        <h3>BVG-Ticket oder JobRad</h3>
+        <p>Direkt am S+U Innsbrucker Platz. Wir bezahlen dein Firmenticket — oder du least dein JobRad über uns.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">↑</div>
+        <h3>Fortbildungsbudget</h3>
+        <p>Jährliches Budget für deine Entwicklung. Reproduktionsmedizin-Spezialisierung, Sonografie-Kurse, Abrechnungs-Updates — du wählst.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">+</div>
+        <h3>Vorsorge & Krankenzusatz</h3>
+        <p>Betriebliche Altersvorsorge und Krankenzusatzversicherung mit Arbeitgeberzuschuss.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">♥</div>
+        <h3>Empfehlungsprämie 1.500 €</h3>
+        <p>Du kennst eine gute MFA? Empfiehl uns weiter — und erhältst 1.500 € Prämie, wenn sie bleibt.</p>
+      </div>
+      <div class="kwz-karte">
+        <div class="kwz-karte__ico">✎</div>
+        <h3>Mitgestaltung</h3>
+        <p>Du baust das Setup der renovierten Praxis mit auf — Arbeitsplätze, Abläufe, digitale Tools. Deine Stimme zählt von Tag 1.</p>
+      </div>
+    </div>
+
+    <div class="kwz-infobox" style="margin-top: var(--kwz-space-2xl);">
+      <div class="kwz-infobox__title">Was du mitbringen solltest</div>
+      <p>
+        Eine abgeschlossene Ausbildung zur Medizinischen Fachangestellten (MFA) ist die Basis. Erfahrung in Gynäkologie oder Reproduktionsmedizin ist ein Plus, aber kein Muss — wir bilden gerne ein, wenn der Rest passt. Was wir nicht beibringen können: Empathie, Zuverlässigkeit und Lust auf ein neues Team.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="kwz-section kwz-section--bg-weiss">
+  <div class="kwz-container">
+    <div class="kwz-twocol">
+      <img src="assets/mfa-team.jpg" alt="Unser aktuelles MFA-Team in der Praxis – wie du siehst, hier wird auch viel gelacht">
+      <div>
+        <div class="kwz-eye">Unser Team</div>
+        <h2>Mit denen wirst du arbeiten</h2>
+        <p>
+          Unser MFA-Team ist heute vielfältig und eingespielt — und freut sich auf Verstärkung. Wir sind ehrlich: Mit der Praxisübernahme verändert sich einiges. Das ist auch der Reiz. Wenn du zu uns kommst, bist du nicht die Neue im versteinerten Team, sondern jemand, der das neue Team mitgestaltet.
+        </p>
+        <p style="font-size: 0.95rem; opacity: 0.75;"><em>Übrigens: Patientinnen siezen wir — im Team duzen wir uns. Vom ersten Tag an.</em></p>
+        <div class="kwz-quote">
+          „Wir wollen einen Arbeitsplatz, an dem man Montagmorgens nicht innerlich seufzt. Das fängt damit an, dass wir zuhören — auch bei kleinen Sachen."
+          <span class="kwz-quote__author">— Dr. Franziska Pauly</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANFAHRT -->
+<section class="kwz-section">
+  <div class="kwz-container">
+    <div class="kwz-eye">So findest du uns</div>
+    <h2>Direkt am S+U Innsbrucker Platz</h2>
+    <p class="kwz-lead">Hauptstr. 65, 12159 Berlin-Friedenau, 5. OG. Ein Knotenpunkt: Ringbahn, U-Bahn, S-Bahn und mehrere Buslinien an einer Station.</p>
+
+    <div class="kwz-grid">
+      <div class="kwz-karte">
+        <h3>Ringbahn S41 / S42 / S46</h3>
+        <p>10 Min Charlottenburg · 8 Min Tempelhof · 12 Min Neukölln · 20 Min Ostkreuz</p>
+      </div>
+      <div class="kwz-karte">
+        <h3>S1 / S26</h3>
+        <p>5 Min Steglitz · 15 Min Friedrichstraße · 25 Min Wannsee</p>
+      </div>
+      <div class="kwz-karte">
+        <h3>U4</h3>
+        <p>Direkter Anschluss Richtung Nollendorfplatz und Innenstadt-Linien</p>
+      </div>
+      <div class="kwz-karte">
+        <h3>Buslinien</h3>
+        <p>5 Buslinien an der Haltestelle — Anbindung in alle Richtungen Schöneberg, Wilmersdorf und Steglitz</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEWERBUNG -->
+<section id="bewerben" class="kwz-section kwz-section--bg-creme">
+  <div class="kwz-container">
+    <div class="kwz-eye">So bewirbst du dich</div>
+    <h2>Kurz, persönlich, schnell</h2>
+    <p class="kwz-lead">
+      Wir wissen, dass dein Tag voll ist. Unsere Bewerbung ist deshalb kurz: ein paar Felder, kein Anschreiben, Lebenslauf optional. Wir melden uns — oft noch am selben Tag, spätestens in <strong>3 Werktagen</strong>.
+    </p>
+
+    <div class="kwz-steps" style="margin-bottom: var(--kwz-space-2xl);">
+      <div class="kwz-step">
+        <h3>Im Portal bewerben</h3>
+        <p>Wenige Felder, kein PDF nötig.</p>
+      </div>
+      <div class="kwz-step">
+        <h3>Schnelle Rückmeldung</h3>
+        <p>Oft noch am selben Tag.</p>
+      </div>
+      <div class="kwz-step">
+        <h3>Video-Kennenlernen</h3>
+        <p>15–20 Min mit einer unserer Ärztinnen.</p>
+      </div>
+      <div class="kwz-step">
+        <h3>Vor Ort &amp; Probehalbtag</h3>
+        <p>Praxis und Team erleben — bezahlt.</p>
+      </div>
+      <div class="kwz-step">
+        <h3>Entscheidung gemeinsam</h3>
+        <p>Wir besprechen ehrlich, ob es passt.</p>
+      </div>
+    </div>
+
+    <div class="kwz-form-wrap" style="text-align: center;">
+      <!--
+        JOIN-PORTAL CTA
+        Bewerbungen laufen komplett über das JOIN-Portal (Multiposting + Formular + Pipeline).
+        Hier die echte JOIN-Job- oder -Karriereseiten-URL einsetzen, sobald angelegt:
+        https://join.com/companies/<unternehmen>  (Karriereseite, listet alle offenen Stellen)
+      -->
+      <h3 style="margin-bottom: var(--kwz-space-md);">Bereit? Dann jetzt bewerben.</h3>
+      <p style="max-width: 520px; margin: 0 auto var(--kwz-space-lg);">Die Bewerbung läuft über unser Bewerbungsportal. Ein Klick, wenige Felder, fertig.</p>
+      <a href="https://join.com/companies/kinderwunschzentrum-innsbrucker-platz" target="_blank" rel="noopener" class="kwz-btn kwz-btn--primary">Zum Bewerbungsportal</a>
+      <p style="margin-top: var(--kwz-space-lg); font-size: 0.9rem;">Lieber direkt? Schreib uns an <a href="mailto:karriere@kinderwunschpraxis-berlin.de"><strong>karriere@kinderwunschpraxis-berlin.de</strong></a> oder ruf an: <strong>+49 30 85757930</strong>.</p>
+    </div>
+
+    <p style="margin-top: var(--kwz-space-lg); font-size: 0.85rem; opacity: 0.7;">
+      <strong>Datenschutz-Hinweis:</strong> Deine Bewerbung wird über unser Bewerbungsportal verarbeitet. Die Entscheidung über Vorstellungsgespräche treffen ausschließlich unsere Ärztinnen. Mehr dazu in unserer
+      <a href="https://www.kinderwunschpraxis-berlin.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.
+    </p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="kwz-section kwz-section--bg-weiss">
+  <div class="kwz-container kwz-container--narrow">
+    <div class="kwz-eye">Häufige Fragen</div>
+    <h2>Was du vielleicht noch wissen möchtest</h2>
+
+    <div class="kwz-faq" style="margin-top: var(--kwz-space-xl);">
+      <details>
+        <summary>Wann kann ich starten?</summary>
+        <div><p>Ab sofort. Wir suchen mehrere MFAs — Vollzeit und Teilzeit, je nach deinem Modell. Falls du noch eine Kündigungsfrist einhalten musst: kein Problem, wir warten gerne ein paar Wochen auf die richtige Person.</p></div>
+      </details>
+      <details>
+        <summary>Brauche ich Erfahrung in Reproduktionsmedizin?</summary>
+        <div><p>Nein. Eine abgeschlossene MFA-Ausbildung reicht als Basis. Wenn du aus der allgemeinen Praxis oder Gynäkologie kommst, lernst du die reproduktionsmedizinischen Abläufe bei uns Schritt für Schritt. Wir bilden gerne ein.</p></div>
+      </details>
+      <details>
+        <summary>Wie sind die Arbeitszeiten?</summary>
+        <div><p>Kernzeiten Mo–Fr. Keine Schichten, keine Wochenenden, keine Nachtdienste. Bei Teilzeit ist auf Wunsch ein 4-Tage-Modell möglich. Konkrete Stundenmodelle besprechen wir individuell.</p></div>
+      </details>
+      <details>
+        <summary>Wann zieht ihr in die neue Praxis?</summary>
+        <div><p>Die Renovierung läuft Juli bis September 2026, Eröffnung im Oktober. Bis dahin arbeiten wir in den bestehenden Räumen — also keine Sorge, du landest nicht erst in einer Baustelle. Wenn du im Sommer startest, gestaltest du das Setup der neuen Praxis aktiv mit.</p></div>
+      </details>
+      <details>
+        <summary>Muss ich ein Anschreiben oder Lebenslauf hochladen?</summary>
+        <div><p>Nein. Die Erstbewerbung ist ein kurzes Formular mit ein paar Fragen. Ein Lebenslauf-Upload ist optional. Wenn wir uns kennenlernen, kannst du Zeugnisse und Referenzen gerne mitbringen — vorher musst du nichts schicken.</p></div>
+      </details>
+      <details>
+        <summary>Wie läuft der Probehalbtag ab?</summary>
+        <div><p>Du kommst für 3–4 Stunden in die Praxis und begleitest das Team. Du siehst die Abläufe, lernst Kolleginnen kennen, stellst Fragen. Wir bezahlen den Halbtag mit einer angemessenen Aufwandsentschädigung — egal wie die Entscheidung danach ausfällt.</p></div>
+      </details>
+      <details>
+        <summary>Du oder Sie?</summary>
+        <div><p>Im Team und im ganzen Bewerbungsprozess duzen wir uns — bei dir bleiben wir also von Anfang an beim Du. Nur unsere Patientinnen sprechen wir mit Sie an.</p></div>
+      </details>
+      <details>
+        <summary>Was passiert mit meinen Daten?</summary>
+        <div><p>Deine Bewerbung läuft über unser Bewerbungsportal und wird dort sicher verarbeitet. Wir speichern die Unterlagen sechs Monate nach Abschluss des Verfahrens, dann werden sie automatisch gelöscht. Die Entscheidung über ein Vorstellungsgespräch trifft immer eine unserer Ärztinnen. Details in der <a href="https://www.kinderwunschpraxis-berlin.de/datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="kwz-section kwz-section--bg-wald">
+  <div class="kwz-container kwz-text-center" style="text-align: center;">
+    <h2 style="color: var(--kwz-weiss);">Klingt das nach dir?</h2>
+    <p style="color: var(--kwz-lindgruen); font-size: 1.1rem; max-width: 600px; margin: 0 auto var(--kwz-space-xl);">
+      Wir freuen uns auf deine Bewerbung. 60 Sekunden, kein Anschreiben.
+    </p>
+    <a href="#bewerben" class="kwz-btn kwz-btn--invers">Jetzt bewerben</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="kwz-footer">
+  <div class="kwz-footer__inner">
+    <div>
+      <img src="assets/logo-weiss.svg" alt="" class="kwz-footer__logo">
+      <strong>Kinderwunschzentrum am Innsbrucker Platz</strong><br>
+      Hauptstr. 65, 12159 Berlin (5. OG)<br>
+      Tel: +49 30 85757930<br>
+      <a href="mailto:karriere@kinderwunschpraxis-berlin.de" style="display: inline; padding: 0;">karriere@kinderwunschpraxis-berlin.de</a>
+    </div>
+    <div>
+      <strong>Hauptseite</strong>
+      <a href="https://www.kinderwunschpraxis-berlin.de" target="_blank" rel="noopener">kinderwunschpraxis-berlin.de</a>
+      <a href="https://www.kinderwunschpraxis-berlin.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+      <a href="https://www.kinderwunschpraxis-berlin.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>
+    </div>
+    <div>
+      <strong>Folge uns</strong>
+      <a href="#" target="_blank" rel="noopener">Instagram (folgt)</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Hauptstr.+65%2C+12159+Berlin" target="_blank" rel="noopener">Google Maps</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
